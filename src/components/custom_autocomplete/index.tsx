@@ -1,5 +1,5 @@
 import {Autocomplete, Button, ClickAwayListener, Divider, Paper, TextField, Typography} from "@mui/material";
-import React, {HTMLAttributes, useCallback, useEffect, useState} from "react";
+import React, {HTMLAttributes, useCallback, useState} from "react";
 import {AutocompleteProps} from "@mui/material/Autocomplete/Autocomplete";
 
 const CustomAutocomplete: React.FC<Omit<JSX.IntrinsicAttributes & AutocompleteProps<unknown, undefined, undefined, undefined, "div">, "renderInput">&{label: string, addNewOption: (value: string) => void}> = ({label,addNewOption,...rest}) => {

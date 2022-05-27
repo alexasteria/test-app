@@ -1,0 +1,14 @@
+type Response {
+    data: Company!
+}
+
+type Company {
+    id: Int!
+    name: String!
+}
+
+type Launch {
+    flight_number: String!
+    mission_name: String!
+    launch_year: String!
+}
